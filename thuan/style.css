@@ -1,0 +1,332 @@
+:root {
+    --main-text-font: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+/* row */
+.space-between {
+    justify-content: space-between;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top {
+    padding: 12px 0;
+    align-items: center;
+    display: block;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* doi mau chu khi di chuot vao */
+a:hover {
+    color: rgba(205, 205, 205, 0.8);
+    text-shadow: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    height: 70px;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    background-color:rgb(148, 148, 148);
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    padding-left: 50px;
+}
+
+/* SERVICES ACCESSORIES */
+.menu {
+    flex: 3;
+    display: flex;
+    font-weight: bold!important;
+}
+
+.menu > li {
+    padding: 0 50px;
+    position: relative;
+    /* font-size: 16px; */
+}
+.menu > li:hover > .sub-menu {
+    display: block;
+    color: black!important;
+}
+.sub-menu {
+    background: white;
+    top: 20px;
+    transition: 0.3s;
+    position: absolute;
+    width: 190px;
+    border: 2px solid #000;
+    padding: 5px 0 10px 10px;
+    display: none;
+}
+
+.sub-menu > li > a {
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    font-style: oblique;
+}
+
+.sub-menu ul {
+    font-size: 12px!important;
+    font-weight: normal!important;
+    padding-left: 10px;
+}
+.menu > li > a {
+    font-size: 16px;
+    /* font-weight: bold; */
+    display: block;
+    line-height: 20px;
+}
+
+.others {
+    flex: 1;
+    display: flex;
+    
+}
+
+.others > li {
+    padding: 0 12px;
+}
+
+
+.others >li:first-child {
+    position: relative;
+}
+
+.others > li:first-child input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+
+.others > li:first-child i {
+    position: absolute;
+    right: 10px;
+}
+
+
+/* app container */
+.app-container {
+    text-align: center;
+    align-items: center;
+    padding: 150px 0 50px 0;
+}
+
+.app-social-network {
+    margin: 9px;
+}
+
+.app-social-network img {
+    cursor: pointer;
+}
+
+.app-container p {
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: #000;
+    font-weight: bold;
+}
+
+.app-container input {
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    width: 400px;
+    text-align: center;
+    outline: none;
+}
+
+/* Footer */
+
+.footer {
+    text-align: center;
+}
+
+/* top */
+
+.footer-top {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 70px;
+
+}
+.footer-top img {
+    height: 50px;
+
+}
+
+.footer-top li {
+    padding: 0 12px;
+    position: relative;
+
+}
+
+.footer-top li {
+    padding: 0 12px;
+    position: relative ;
+
+}
+
+.footer-top li::after {
+    content:"";
+    display: block;
+    width: 1px;
+    height: 80%;
+    background: #ccc;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+
+.footer-top li:last-child::after {
+    display: none;
+}
+
+.footer-top li:last-child a {
+    margin-right: 12px;
+}
+
+
+/* center */
+.footer-center {
+    text-align: center;
+
+}
+.footer-bottom {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* SERVICES */
+.services {
+    padding: 100px 0 0;
+}
+
+.services-top {
+    margin-bottom: 50px;
+    color: grey;
+    font-size: 12px;
+}
+
+.services-top p {
+    font-family: var(--main-text-font);
+    margin: 0 12px;
+    font-size:12px;
+}
+.services-left {
+    /* font-size: 16px; */
+    width:20%;
+}
+
+.services-left-li-ul > a {
+    font-weight: bold;
+    font-size: 14px;
+    font-style: oblique;
+    text-decoration: none;
+    color: black;
+}
+.services-left-li-ul-li {
+    font-size: 13px!important;
+    padding-left: 20px;
+}
+
+.services-right {
+    width: 80%;
+}
+
+.services-right-top-item:first-child {
+    flex: 2;
+    font-size: 16px;
+    font-family: var(--main-text-font);
+    font-weight: bold;
+}
+
+.services-right-top-item {
+    flex: 1;
+    padding: 0 9px;
+
+}
+
+.services-right-top-item button {
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: 2px solid #dddddd;
+    cursor: pointer;
+}
+.services-right-top-item select {
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: 2px solid #dddddd;
+    cursor: pointer;
+}
+
+.services-right-content {
+    margin-top: 2px;
+    justify-content: space-between;
+}
+
+.services-right-content-item {
+    width: calc(25%-12px);
+    text-align: center;
+    padding: 12px 0;
+
+}
+
+.services-right-content-item h1 {
+    font-size: 11px;
+    font-family: var(--main-text-font);
+    margin-top: 6px;
+    color: #333333;
+
+}
+
+.services-right-content-item img {
+    width: 100%;
+}
+
+.services-right-content-item p {
+    font-size: 12px;
+
+}
